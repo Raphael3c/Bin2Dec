@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E4D9FF;
+}
+
+.container{    
+
+    margin: auto;
+    padding: 0;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+
+    width: 50vw;
+    height: 80vh;
+    background-color: #FAFAFF;
+
+}
