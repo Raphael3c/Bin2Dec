@@ -1,12 +1,19 @@
 
 
-function bla(number){
+function convert(number){
     const re = /[2-9]/g
+    const re1 = /[a-z]/g
+    const re2 = /[A-Z]/g
     
-    if(number.search(re) !== -1){
+    if(number.search(re) !== -1 || 
+        number.search(re1) !== -1 || 
+        number.search(re2) !== -1 ||
+        number == ''){
+
         alert("Número inválido")
         document.getElementById('number').value = ''
         return
+        
     }
 
     let pow = number.length - 1;
@@ -19,7 +26,6 @@ function bla(number){
         pow--;
     }
 
-    alert(sum)
+    document.getElementById('number-converted').value = sum
 
-    document.getElementById('number').value = ''
 }

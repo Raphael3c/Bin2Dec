@@ -9,26 +9,41 @@
     <title>Bin2Dec</title>
 </head>
 <body>
-            <form action="" class="container">
-                    <div class="containerNumber">
-                            <label for="number">Digite o número</label>
-                            <input 
-                                type="text" 
-                                id="number" 
-                                placeholder="binário ou decimal" 
-                                class="form-control"
-                                name="number"
-                            >
-                    </div>
+    <main>
+        <form action="">
+            <div>
+                <label for="number">Digite o número</label>
+                <br>
+                <input 
+                    type="text" 
+                    id="number" 
+                    placeholder="Ex.: 1100..." 
+                    name="number"
+                    class="form-control"
+                >
+            </div>
 
-                    <button 
-                        type="button" 
-                        class="btn btn-primary" 
-                        onclick="bla(this.form.number.value)"
-                    >
-                        Primary
-                    </button>
-            </form>
+            <div>
+                <label for="number-converted">Número convertido</label>
+                <br>
+                <input 
+                    type="text" 
+                    id="number-converted" 
+                    name="number-converted"
+                    disabled
+                    class="form-control"
+                >
+            </div>
+
+            <button 
+                type="button" 
+                onclick="convert(this.form.number.value)"
+                class="btn btn-success"
+            >
+                Converter
+            </button>
+        </form>
+    </main>
 </body>
 
 
