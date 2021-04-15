@@ -8,18 +8,20 @@ body{
     background-color: #E4D9FF;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 main{
-    position: absolute;
+    position: relative;
+
+
+    margin-left: auto;
+    margin-right: auto;
 
     width: 55%;
     height: 70%;
 
-    right: 0;
-
-    top: 50%;
-    transform: translateY(-50%);
+    top: 10%;
 
     background-color: #FAFAFF;
 
